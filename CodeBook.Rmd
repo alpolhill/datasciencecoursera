@@ -1,3 +1,5 @@
+## Variables in the Dataset 
+ 
   - "subject": id of subjects      
   - "activity": type of activity subject performed while measurement was taken: walking, walking upstairs, walking downstairs, sitting, standing, laying
   - "t_body_acc_mean_x"                      
@@ -85,4 +87,16 @@
   - "f_body_acc_mag_std"                      
   - "f_body_body_acc_jerk_mag_std"            
   - "f_body_body_gyro_mag_std"               
-  - "f_body_body_gyro_jerk_mag_std" 
+  - "f_body_body_gyro_jerk_mag_std"
+  
+## Process of Tidying the Dataset
+
+1. Renamed features to be a little neater
+1. Insert features list as column names for test and train sets
+1. Change labels to be actual activity names
+1. Insert activity names as columns in test and train sets
+1. Remove duplicate columns from test and train sets
+1. Merge test and train sets
+1. Select only subject, activity, and columns containing "mean" and "std" for measurements on the mean and standard deviation
+1. Find the Mean by subject and activity on all measurements
+1. Saved dataset as tidy.txt
